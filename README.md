@@ -1,7 +1,7 @@
 # OEIS A005432: reference for subgroup asymptotics (not yet submitted)
 
 <!-- oeis-status:begin -->
-**OEIS status: not submitted** (lab registry, 13 Nov 2026).
+**OEIS status: not submitted** (lab registry, 14 Nov 2026).
 
 - [A005432](https://oeis.org/A005432), Roney-Dougal and Tracey, arXiv:2503.05416: **candidate** (2026-11-13: repository built (core c6)). Certificate: complete.
 

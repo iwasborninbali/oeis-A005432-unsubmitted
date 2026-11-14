@@ -1,0 +1,36 @@
+METHOD: from-scratch permutation closure; no GAP, Magma, or group-library calls
+DEFINITION: all distinct subgroups of S_n, conjugates counted separately
+OEIS OFFSET: 0
+n | exact | OEIS | equal | generator-extensions | elapsed_sec
+ 0 | 1 | 1 | YES | 0 | 0.000018
+ 1 | 1 | 1 | YES | 0 | 0.000011
+ 2 | 2 | 2 | YES | 1 | 0.000016
+ 3 | 6 | 6 | YES | 12 | 0.000051
+ 4 | 30 | 30 | YES | 204 | 0.001185
+ 5 | 156 | 156 | YES | 4169 | 0.119691
+ 6 | 1455 | 1455 | YES | 165281 | 33.720887
+FINITE-N SUBSPACE LOWER BOUND: every subspace of (C2)^floor(n/2)
+is a distinct subgroup of S_n by disjoint transpositions
+n | dimension | subspaces | A005432 | lower_bound_holds | log2(subspaces)/n^2
+ 0 |  0 | 1 | 1 | YES | n/a
+ 1 |  0 | 1 | 1 | YES | 0.00000000
+ 2 |  1 | 2 | 2 | YES | 0.25000000
+ 3 |  1 | 2 | 6 | YES | 0.11111111
+ 4 |  2 | 5 | 30 | YES | 0.14512051
+ 5 |  2 | 5 | 156 | YES | 0.09287712
+ 6 |  3 | 16 | 1455 | YES | 0.11111111
+ 7 |  3 | 16 | 11300 | YES | 0.08163265
+ 8 |  4 | 67 | 151221 | YES | 0.09478264
+ 9 |  4 | 67 | 1694723 | YES | 0.07488999
+10 |  5 | 374 | 29594446 | YES | 0.08546894
+11 |  5 | 374 | 404126228 | YES | 0.07063549
+12 |  6 | 2825 | 10594925360 | YES | 0.07961136
+13 |  6 | 2825 | 175238308453 | YES | 0.06783453
+14 |  7 | 29212 | 5651774693595 | YES | 0.07568507
+15 |  7 | 29212 | 117053117995400 | YES | 0.06593010
+16 |  8 | 417199 | 5320744503742316 | YES | 0.07293116
+17 |  8 | 417199 | 125889331236297288 | YES | 0.06460338
+18 |  9 | 8283458 | 7598016157515302757 | YES | 0.07093149
+TOTAL_RUNTIME_SEC: 33.842334
+CONCLUSION: exact small-n counts agree; finite lower bound holds for n=0..18
+LIMITATION: finite checks cannot prove the n->infinity asymptotic theorem
